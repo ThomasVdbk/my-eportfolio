@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.fab17b58.css","mappings":"AAAA,QACI,WACJ,CAEA,MACI,WACJ","sources":["styles/headerStyle.css"],"sourcesContent":[".avatar {\r\n    height: 60px;\r\n}\r\n\r\n.item {\r\n    height: 30px;\r\n}"],"names":[],"sourceRoot":""}
