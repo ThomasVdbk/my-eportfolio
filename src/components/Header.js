@@ -13,14 +13,20 @@ function Header() {
           <h1>Thomas</h1>
           <h3>Testeur / développeur web</h3>
           <div className="header-contacts">
-            <div className="contact-items">
-              <img className="item" src={linkedin} alt="linkedin-logo" />
-              <img className="item" src={github} alt="github-logo" />
-            </div>
+            <img className="contact-item" src={linkedin} alt="linkedin-logo" />
+            <img
+              className="contact-item github"
+              src={github}
+              alt="github-logo"
+            />
           </div>
         </div>
       </div>
-      <div className="header-right">header</div>
+      <div className="header-right">
+        <button className="header-right-btn icon-button">Accueil</button>
+        <button className="header-right-btn">Expérience</button>
+        <button className="header-right-btn">Travail</button>
+      </div>
     </header>
   );
 }
