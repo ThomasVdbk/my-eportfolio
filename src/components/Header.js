@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import avatar from "../assets/avatar.jpg";
 import linkedin from "../assets/linkedin.png";
@@ -6,8 +7,22 @@ import "../styles/headerStyle.css";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
+import Accueil from "./Accueil";
+import Experience from "./Experience";
+import Travail from "./Travail";
 
-function Header() {
+function Header({ setBodyContent }) {
+  const [currentSection, setCurrentSection] = useState("Accueil");
+
+  const handleButtonClick = (section) => {
+    setCurrentSection(section);
+    setBodyContent(section);
+  };
+
+  useEffect(() => {
+    setBodyContent(currentSection);
+  }, [currentSection, setBodyContent]);
+
   return (
     <header>
       <div className="header-left">
@@ -26,17 +41,26 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
-        <button className="header-right-btn">
+        <button
+          className="header-right-btn"
+          onClick={() => handleButtonClick("Accueil")}
+        >
           <GrHomeRounded />
           <br />
           Accueil
         </button>
-        <button className="header-right-btn">
+        <button
+          className="header-right-btn"
+          onClick={() => handleButtonClick("Expérience")}
+        >
           <MdWorkOutline />
           <br />
           Expérience
         </button>
-        <button className="header-right-btn">
+        <button
+          className="header-right-btn"
+          onClick={() => handleButtonClick("Travail")}
+        >
           <BsPersonWorkspace />
           <br />
           Travail
