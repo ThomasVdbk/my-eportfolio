@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import avatar from "../assets/avatar.jpg";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
 import "../styles/headerStyle.css";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Header({ setBodyContent }) {
   const [currentSection, setCurrentSection] = useState("Accueil");
@@ -20,6 +19,17 @@ function Header({ setBodyContent }) {
     setBodyContent(currentSection);
   }, [currentSection, setBodyContent]);
 
+  const handleLinkedInClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/thomas-vandemeulebroucke/",
+      "_blank"
+    );
+  };
+
+  const handleGithubClick = () => {
+    window.open("https://github.com/ThomasVdbk", "_blank");
+  };
+
   return (
     <header>
       <div className="header-left">
@@ -28,22 +38,24 @@ function Header({ setBodyContent }) {
           <h1>Thomas</h1>
           <h3>Testeur / développeur web</h3>
           <div className="header-contacts">
-            <img className="contact-item" src={linkedin} alt="linkedin-logo" />
-            <img
-              className="contact-item github"
-              src={github}
-              alt="github-logo"
+            <FaLinkedin
+              className="contact-item"
+              onClick={handleLinkedInClick}
+              size={30}
+            />
+            <FaGithub
+              className="contact-item"
+              onClick={handleGithubClick}
+              size={30}
             />
           </div>
         </div>
       </div>
       <div className="header-right">
-
         <button
           className="header-right-btn"
           onClick={() => handleButtonClick("Accueil")}
         >
-
           <GrHomeRounded />
           <br />
           Accueil
@@ -64,7 +76,6 @@ function Header({ setBodyContent }) {
           <br />
           Travail
         </button>
-
       </div>
     </header>
   );
