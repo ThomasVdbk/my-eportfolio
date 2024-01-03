@@ -3,6 +3,9 @@ import avatar from "../assets/avatar.jpg";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import "../styles/headerStyle.css";
+import { GrHomeRounded } from "react-icons/gr";
+import { MdWorkOutline } from "react-icons/md";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 function Header() {
   return (
@@ -23,9 +26,21 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
-        <button className="header-right-btn icon-button">Accueil</button>
-        <button className="header-right-btn">Expérience</button>
-        <button className="header-right-btn">Travail</button>
+        <button className="header-right-btn">
+          <GrHomeRounded />
+          <br />
+          Accueil
+        </button>
+        <button className="header-right-btn">
+          <MdWorkOutline />
+          <br />
+          Expérience
+        </button>
+        <button className="header-right-btn">
+          <BsPersonWorkspace />
+          <br />
+          Travail
+        </button>
       </div>
     </header>
   );
