@@ -10,7 +10,8 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding: 25px 25px; */
+    padding: 25px 25px;
+    box-sizing: border-box;
 }
 /***** HEADER LEFT *****/
 .header-left{
