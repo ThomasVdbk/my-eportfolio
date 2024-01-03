@@ -26,6 +26,7 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
+
         <button className="header-right-btn">
           <GrHomeRounded />
           <br />
@@ -41,6 +42,7 @@ function Header() {
           <br />
           Travail
         </button>
+
       </div>
     </header>
   );
