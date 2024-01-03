@@ -38,10 +38,12 @@ function Header({ setBodyContent }) {
         </div>
       </div>
       <div className="header-right">
+
         <button
           className="header-right-btn"
           onClick={() => handleButtonClick("Accueil")}
         >
+
           <GrHomeRounded />
           <br />
           Accueil
@@ -62,6 +64,7 @@ function Header({ setBodyContent }) {
           <br />
           Travail
         </button>
+
       </div>
     </header>
   );
