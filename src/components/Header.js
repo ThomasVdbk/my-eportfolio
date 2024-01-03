@@ -7,9 +7,6 @@ import "../styles/headerStyle.css";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
-import Accueil from "./Accueil";
-import Experience from "./Experience";
-import Travail from "./Travail";
 
 function Header({ setBodyContent }) {
   const [currentSection, setCurrentSection] = useState("Accueil");
