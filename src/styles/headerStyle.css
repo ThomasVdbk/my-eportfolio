@@ -1,7 +1,63 @@
-.avatar {
-    height: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Preahvihear&display=swap');
+
+header{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 25px 25px; */
+}
+/***** HEADER LEFT *****/
+.header-left{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.item {
+.avatar {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.user-infos{
+    padding-left: 20px;
+}
+
+.header-contacts{
+    margin-top: 20px;
+}
+
+.contact-item {
     height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.contact-item:hover {
+    border-radius: 10%;
+    background-color: rgb(188, 200, 212) ;
+}
+.github:hover {
+    border-radius: 50%;
+}
+
+
+/***** HEADER RIGHT *****/
+
+.header-right{
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-right-btn{
+    font-size: 20px;
+    background-color: rgb(44, 44, 44);
+    margin-right: 20px;
+    border-radius: 25%;
 }
