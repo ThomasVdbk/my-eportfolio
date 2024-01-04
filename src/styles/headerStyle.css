@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Preahvihear&display=swap');
-
 header {
     color: aliceblue;
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
     background-color: rgb(39, 39, 39);
     display: flex;
