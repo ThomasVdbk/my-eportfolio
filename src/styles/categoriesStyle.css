@@ -1,37 +1,39 @@
 .card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-    align-items: center;
-    align-content: flex-start;
-    column-width: 250px;
-    column-count: 2; 
-    column-gap: 20px;
-  }
-  
-  h2 {
-    text-align: center; 
-  }
-  
-  .article-card {
-    width: 20%; /* Occupe la largeur complète du conteneur */
-    margin: 10px; /* Espacement entre les cartes (ajustez selon vos préférences) */
-    background-color: #fff; /* Couleur de fond pour chaque carré */
-    padding: 20px; /* Espace interne dans chaque carré */
-    border: 1px solid #ccc; /* Bordure autour de chaque carré (facultatif) */
-    border-radius: 8px; /* Coins arrondis (facultatif) */
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); /* Ombre légère (facultatif) */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  column-gap: 20px;
 }
-  
-  /* Styles supplémentaires pour le contenu de l'article */
-  .article-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .article-card p {
-    font-size: 1em;
-    color: #555;
-  }
-  
+
+h2 {
+  text-align: center;
+}
+
+.article-card {
+  width: 20%;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.article-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.article-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+/*className ajouté si 1 seul article*/
+.single-article{
+  width: 90%;
+  height: 90%;
+}
