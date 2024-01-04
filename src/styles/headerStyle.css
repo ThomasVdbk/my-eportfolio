@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Preahvihear&display=swap');
 
-header{
+header {
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -9,14 +9,15 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 20px;
-   padding-bottom: 10px;
+    padding-bottom: 10px; 
 }
+
 /***** HEADER LEFT *****/
-.header-left{
+.header-left {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    padding-left: 20px;
 }
 
 .avatar {
@@ -25,11 +26,11 @@ header{
     border-radius: 50%;
 }
 
-.user-infos{
+.user-infos {
     padding-left: 20px;
 }
 
-.header-contacts{
+.header-contacts {
     margin-top: 20px;
 }
 
@@ -37,21 +38,23 @@ header{
     margin-right: 20px;
     cursor: pointer;
 }
+
 .contact-item:hover {
     border-radius: 10%;
-    background-color: rgb(188, 200, 212) ;
+    background-color: rgb(188, 200, 212);
 }
 
 
 /***** HEADER RIGHT *****/
 
-.header-right{
+.header-right {
     flex-grow: 2;
     display: flex;
     justify-content: flex-start;
+    padding-left: 20px;
 }
 
-.header-right-btn{
+.header-right-btn {
 
     background-color: rgb(44, 44, 44);
     color: #ffffff;
@@ -64,10 +67,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
-.header-right-btn:hover{
+
+.header-right-btn:hover {
     background-color: rgb(56, 56, 56);
 }
-
-

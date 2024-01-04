@@ -53,12 +53,6 @@ const articlesData = [
     content: "Contenu de l'article Accueil 1",
     category: "Travail",
   },
-  {
-    id: 10,
-    title: "Article Travail 3",
-    content: "Contenu de l'article Accueil 1",
-    category: "Travail",
-  },
 ];
 
 export default articlesData;
