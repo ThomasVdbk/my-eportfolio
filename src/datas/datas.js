@@ -12,6 +12,30 @@ const articlesData = [
     category: "Accueil",
   },
   {
+    id: 2,
+    title: "Article Accueil 2",
+    content: "Contenu de l'article Accueil 1",
+    category: "Accueil",
+  },
+  {
+    id: 2,
+    title: "Article Accueil 2",
+    content: "Contenu de l'article Accueil 1",
+    category: "Accueil",
+  },
+  {
+    id: 2,
+    title: "Article Accueil 2",
+    content: "Contenu de l'article Accueil 1",
+    category: "Accueil",
+  },
+  {
+    id: 2,
+    title: "Article Accueil 2",
+    content: "Contenu de l'article Accueil 1",
+    category: "Accueil",
+  },
+  {
     id: 3,
     title: "Article Expérience 3",
     content: "Contenu de l'article Accueil 1",

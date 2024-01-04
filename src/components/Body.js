@@ -1,5 +1,6 @@
 import React from "react";
 import Categories from "./Categories";
+import "../styles/bodyStyle.css";
 
 function Body({ currentSection }) {
   return (
