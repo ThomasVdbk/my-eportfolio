@@ -5,19 +5,29 @@ import "../styles/categoriesStyle.css";
 
 function Categories({ currentSection }) {
   const [categoryArticles, setCategoryArticles] = useState([]);
+  const [categoryTitle, setCategoryTitle] = useState("");
+  const numberOfArticles = categoryArticles.length;
 
   useEffect(() => {
     const filteredArticles = articlesData.filter(
       (article) => article.category === currentSection
     );
     setCategoryArticles(filteredArticles);
-  }, [currentSection]);
 
-  const numberOfArticles = categoryArticles.length;
+    setCategoryTitle(
+      currentSection === "Accueil"
+        ? "Articles d'accueil"
+        : currentSection === "Expérience"
+        ? "Articles d'expérience"
+        : currentSection === "Travail"
+        ? "Articles de travail"
+        : ""
+    );
+  }, [currentSection]);
 
   return (
     <div>
-      <h2>{currentSection} Component</h2>
+      <h2>{categoryTitle}</h2>
       <div className="card-container">
         {categoryArticles.map((article) => (
           <div
