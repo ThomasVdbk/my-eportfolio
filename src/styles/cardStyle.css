@@ -8,7 +8,10 @@
     position: relative;
     transition: all 0.3s ease;
 }
-
+.single-article{
+    height: auto;
+    width: auto;
+}
 .article-card h3 {
     font-size: 1rem;
     font-weight: 300;
@@ -19,7 +22,7 @@
     padding: 1rem;
 }
 
-.article-card button {
+/* .article-card button {
     background-color: #555;
     color: white;
     border: none;
@@ -29,7 +32,7 @@
     bottom: 0;
     left: 0;
     border-top-right-radius: 1.5rem;
-}
+} */
 
 .article-card.expanded {
     width: 100%;
@@ -47,11 +50,11 @@
     padding: 2rem;
 }
 
-.article-card.expanded button {
+/* .article-card.expanded button {
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} */
 
 .article-card.expanding {
     transition: none;
