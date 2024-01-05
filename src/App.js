@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header setBodyContent={setBodyContent} />
+      {/* Body parent de Category parent de Card  */}
       <Body currentSection={currentSection} />
     </div>
   );

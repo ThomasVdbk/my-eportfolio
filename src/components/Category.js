@@ -1,12 +1,11 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Card from "./Card";
 import articlesData from "../datas/datas";
 import "../styles/categoriesStyle.css";
 
 function Categories({ currentSection }) {
   const [categoryArticles, setCategoryArticles] = useState([]);
   const [categoryTitle, setCategoryTitle] = useState("");
-  const numberOfArticles = categoryArticles.length;
 
   useEffect(() => {
     const filteredArticles = articlesData.filter(
@@ -30,15 +29,12 @@ function Categories({ currentSection }) {
       <h2>{categoryTitle}</h2>
       <div className="card-container">
         {categoryArticles.map((article) => (
-          <div
-            className={`article-card ${
-              numberOfArticles === 1 ? "single-article" : ""
-            }`}
+          <Card
             key={article.id}
-          >
-            <h3>{article.title}</h3>
-            <p>{article.content}</p>
-          </div>
+            title={article.title}
+            content={article.content}
+            isSingle={categoryArticles.length === 1}
+          />
         ))}
       </div>
     </div>
