@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "../styles/cardStyle.css";
 
-function Card({ title, content, isSingle, expanded, onClick }) {
+function Card({ title, img, content, isSingle, expanded, onClick }) {
   const truncatedContent = isSingle ? content : content.slice(0, 100) + "...";
   // const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
@@ -27,6 +27,7 @@ function Card({ title, content, isSingle, expanded, onClick }) {
       }`}
       onClick={handleCardClick}
     >
+      <img src={img} alt={title} />
       <h3 className="header">{title}</h3>
       <p className={expanded ? "expanded-content" : "truncated-content"}>
         {expanded ? content : truncatedContent}

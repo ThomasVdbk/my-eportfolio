@@ -46,6 +46,7 @@ function Categories({ currentSection }) {
         {categoryArticles.map((article) => (
           <Card
             key={article.id}
+            img={article.img}
             title={article.title}
             content={article.content}
             isSingle={categoryArticles.length === 1}
