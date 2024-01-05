@@ -3,7 +3,7 @@ import "../styles/cardStyle.css";
 
 function Card({ title, img, content, isSingle, expanded, onClick }) {
   const truncatedContent = isSingle ? content : content.slice(0, 100) + "...";
-  // const [expanded, setExpanded] = useState(false);
+
   const cardRef = useRef(null);
 
   const handleCardClick = () => {
@@ -17,6 +17,12 @@ function Card({ title, img, content, isSingle, expanded, onClick }) {
         block: "start",
       });
     }
+
+    if (!expanded) {
+      setTimeout(() => {
+        cardRef.current.classList.add("expanding");
+      }, 10);
+    }
   };
 
   return (
@@ -27,7 +33,7 @@ function Card({ title, img, content, isSingle, expanded, onClick }) {
       }`}
       onClick={handleCardClick}
     >
-      <img src={img} alt={title} />
+      <img className="img" src={img} alt={title} />
       <h3 className="header">{title}</h3>
       <p className={expanded ? "expanded-content" : "truncated-content"}>
         {expanded ? content : truncatedContent}
