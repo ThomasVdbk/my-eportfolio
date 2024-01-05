@@ -1,11 +1,11 @@
 import React from "react";
-import Categories from "./Categories";
+import Category from "./Category";
 import "../styles/bodyStyle.css";
 
 function Body({ currentSection }) {
   return (
     <div className="body-container">
-      <Categories currentSection={currentSection} />
+      <Category currentSection={currentSection} />
     </div>
   );
 }
