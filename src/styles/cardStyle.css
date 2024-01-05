@@ -1,0 +1,76 @@
+.article-card {
+    height: 200px;
+    width: 350px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #333;
+    margin: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.single-article{
+    height: auto;
+    width: auto;
+}
+.article-card h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.75;
+}
+
+.article-card p {
+    padding: 1rem;
+}
+
+/* .article-card button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 1.5rem;
+} */
+
+.article-card.expanded {
+    width: 100%;
+    min-height: 200px;
+    /* min-width: 350px; */
+    height: auto;
+    /* position: fixed; */
+    /* top: 0.5; */
+    /* Cette ligne semble être une erreur, elle doit être décommentée et le pourcentage doit être spécifié comme une valeur (ex: 0.5rem) */
+    left: 0;
+    /* z-index: 1; */
+}
+
+.article-card.expanded p {
+    padding: 2rem;
+}
+
+/* .article-card.expanded button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+.article-card.expanding {
+    transition: none;
+    animation: expandAnimation 1s ease forwards;
+}
+
+@keyframes expandAnimation {
+    from {
+        width: min(400px, 80vw);
+    }
+
+    to {
+        width: 100%;
+        height: auto;
+        top: 0.5rem;
+        left: 0;
+        z-index: 1;
+    }
+}
