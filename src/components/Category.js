@@ -11,7 +11,13 @@ function Categories({ currentSection }) {
     const filteredArticles = articlesData.filter(
       (article) => article.category === currentSection
     );
-    setCategoryArticles(filteredArticles);
+
+    const articlesWithExpanded = filteredArticles.map((article) => ({
+      ...article,
+      expanded: false,
+    }));
+
+    setCategoryArticles(articlesWithExpanded);
 
     setCategoryTitle(
       currentSection === "Accueil"
@@ -24,6 +30,15 @@ function Categories({ currentSection }) {
     );
   }, [currentSection]);
 
+  const handleCardClick = (clickedId) => {
+    setCategoryArticles((prevArticles) =>
+      prevArticles.map((article) => ({
+        ...article,
+        expanded: article.id === clickedId ? !article.expanded : false,
+      }))
+    );
+  };
+
   return (
     <div>
       <h2>{categoryTitle}</h2>
@@ -31,9 +46,12 @@ function Categories({ currentSection }) {
         {categoryArticles.map((article) => (
           <Card
             key={article.id}
+            img={article.img}
             title={article.title}
             content={article.content}
             isSingle={categoryArticles.length === 1}
+            expanded={article.expanded}
+            onClick={() => handleCardClick(article.id)}
           />
         ))}
       </div>
