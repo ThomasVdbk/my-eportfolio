@@ -41,7 +41,6 @@
     height: auto;
     /* position: fixed; */
     /* top: 0.5; */
-    /* Cette ligne semble être une erreur, elle doit être décommentée et le pourcentage doit être spécifié comme une valeur (ex: 0.5rem) */
     left: 0;
     /* z-index: 1; */
 }

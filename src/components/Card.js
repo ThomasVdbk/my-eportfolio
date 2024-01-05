@@ -1,20 +1,21 @@
 import React, { useState, useRef } from "react";
 import "../styles/cardStyle.css";
 
-function Card({ title, content, isSingle }) {
+function Card({ title, content, isSingle, expanded, onClick }) {
   const truncatedContent = isSingle ? content : content.slice(0, 100) + "...";
-  const [expanded, setExpanded] = useState(false);
+  // const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
 
   const handleCardClick = () => {
-    if (!isSingle) {
-      setExpanded(!expanded);
-      if (!expanded) {
-        cardRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
+    if (!isSingle && onClick) {
+      onClick();
+    }
+
+    if (!isSingle && !expanded) {
+      cardRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
