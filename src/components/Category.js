@@ -30,13 +30,19 @@ function Categories({ currentSection }) {
     );
   }, [currentSection]);
 
-  const handleCardClick = (clickedId) => {
+  const handleCardClick = (clickedId, cardRef) => {
     setCategoryArticles((prevArticles) =>
       prevArticles.map((article) => ({
         ...article,
         expanded: article.id === clickedId ? !article.expanded : false,
       }))
     );
+    setTimeout(() => {
+      cardRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 0);
   };
 
   return (
@@ -51,7 +57,7 @@ function Categories({ currentSection }) {
             content={article.content}
             isSingle={categoryArticles.length === 1}
             expanded={article.expanded}
-            onClick={() => handleCardClick(article.id)}
+            onClick={(cardRef) => handleCardClick(article.id, cardRef)}
           />
         ))}
       </div>

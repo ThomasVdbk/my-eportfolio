@@ -6,7 +6,7 @@
     background: #333;
     margin: 1rem;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 3s ease;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
@@ -62,7 +62,7 @@
     /* top: 0.5; */
     left: 0;
     /* z-index: 1; */
-}
+   }
 
 .article-card.expanded img{
     margin-top: 10px;
@@ -84,7 +84,7 @@
     left: 0;
 } */
 
-.article-card.expanding {
+/* .article-card.expanding {
     transition: none;
     animation: expandAnimation 0.5s ease forwards;
 }
@@ -101,4 +101,4 @@
         left: 0;
         z-index: 1;
     }
-}
+} */
