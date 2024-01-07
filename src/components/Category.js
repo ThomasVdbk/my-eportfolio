@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import articlesData from "../datas/datas";
-import "../styles/categoriesStyle.css";
+import "../styles/categoryStyle.css";
 
 function Categories({ currentSection }) {
   const [categoryArticles, setCategoryArticles] = useState([]);
