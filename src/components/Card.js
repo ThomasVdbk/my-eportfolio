@@ -20,7 +20,7 @@ function Card({ title, img, content, isSingle, expanded, onClick }) {
     >
       <img className="img" src={img} alt={title} />
       <h3 className="header">{title}</h3>
-      <p className="p">{content}</p>
+      {content && <p className="p">{content}</p>}
     </div>
   );
 }

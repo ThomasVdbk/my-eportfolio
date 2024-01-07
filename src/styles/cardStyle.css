@@ -27,6 +27,7 @@
 .article-card p {
     padding: 1rem;
     margin: 0;
+    color: antiquewhite;
 }
 
 .article-card img {
@@ -35,70 +36,29 @@
     object-fit: cover;
 }
 
-/* .article-card button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top-right-radius: 1.5rem;
-} */
-
 
 /**** Propriete lorsque article-card est expanded ****/
 
 .article-card.expanded {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     min-height: 200px;
-    /* min-width: 350px; */
     height: auto;
-    /* position: fixed; */
-    /* top: 0.5; */
     left: 0;
-    /* z-index: 1; */
-   }
+}
 
-.article-card.expanded img{
+.article-card.expanded img {
     margin-top: 10px;
     border-style: solid;
     border-color: #4a4949;
     height: 150px;
     width: auto;
     border-radius: 15%;
-   
+
 }
 
 .article-card.expanded p {
-        padding: 2rem;
+    padding: 2rem;
 }
-
-/* .article-card.expanded button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
-
-/* .article-card.expanding {
-    transition: none;
-    animation: expandAnimation 0.5s ease forwards;
-}
-
-@keyframes expandAnimation {
-    from {
-        width: min(400px, 80vw);
-    }
-
-    to {
-        width: 100%;
-        height: auto;
-        top: 0.5rem;
-        left: 0;
-        z-index: 1;
-    }
-} */
