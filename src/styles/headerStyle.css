@@ -70,3 +70,7 @@ header {
 .header-right-btn:hover {
     background-color: rgb(56, 56, 56);
 }
+
+.header-pdf{
+    padding-right: 40px;
+}
