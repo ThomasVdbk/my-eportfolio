@@ -10,6 +10,7 @@ import { FaFilePdf } from "react-icons/fa6";
 
 function Header({ setBodyContent }) {
   const [currentSection, setCurrentSection] = useState("Accueil");
+
   const pdfFileName = "Thomas_Vandemeulebroucke_CV.pdf";
   const pdfFileUrl = process.env.PUBLIC_URL + "/" + pdfFileName;
 
@@ -25,12 +26,17 @@ function Header({ setBodyContent }) {
   const handleLinkedInClick = () => {
     window.open(
       "https://www.linkedin.com/in/thomas-vandemeulebroucke/",
-      "_blank"
+      "_blank",
+      "noopener,noreferrer"
     );
   };
 
   const handleGithubClick = () => {
-    window.open("https://github.com/ThomasVdbk", "_blank");
+    window.open(
+      "https://github.com/ThomasVdbk",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
