@@ -6,9 +6,12 @@ import { GrHomeRounded } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa6";
 
 function Header({ setBodyContent }) {
   const [currentSection, setCurrentSection] = useState("Accueil");
+  const pdfFileName = "Thomas_Vandemeulebroucke_CV.pdf";
+  const pdfFileUrl = process.env.PUBLIC_URL + "/" + pdfFileName;
 
   const handleButtonClick = (section) => {
     setCurrentSection(section);
@@ -76,6 +79,11 @@ function Header({ setBodyContent }) {
           <br />
           Travail
         </button>
+      </div>
+      <div className="header-pdf">
+        <a href={pdfFileUrl} download={pdfFileName} title="Télécharger mon CV">
+          <FaFilePdf className="pdf" size={40} color="white" />
+        </a>
       </div>
     </header>
   );
