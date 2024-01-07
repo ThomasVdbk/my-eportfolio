@@ -14,6 +14,9 @@ function Footer({ setBodyContent }) {
     setBodyContent(currentSection);
   }, [currentSection, setBodyContent]);
 
+  const pdfFileName = "Thomas_Vandemeulebroucke_CV.pdf";
+  const pdfFileUrl = process.env.PUBLIC_URL + "/" + pdfFileName;
+
   return (
     <footer>
       <div className="footer-left">
@@ -64,6 +67,11 @@ function Footer({ setBodyContent }) {
               onClick={() => handleButtonClick("Travail")}
             >
               Travail
+            </li>
+            <li className="footer-li">
+              <a href={pdfFileUrl} download={pdfFileName}>
+                Télécharger mon CV
+              </a>
             </li>
           </ul>
         </p>

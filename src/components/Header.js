@@ -51,11 +51,13 @@ function Header({ setBodyContent }) {
               className="contact-item"
               onClick={handleLinkedInClick}
               size={30}
+              title="Ouvrir mon linkedin"
             />
             <FaGithub
               className="contact-item"
               onClick={handleGithubClick}
               size={30}
+              title="Ouvrir mon github"
             />
           </div>
         </div>
