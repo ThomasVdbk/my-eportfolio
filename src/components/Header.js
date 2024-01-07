@@ -36,7 +36,7 @@ function Header({ setBodyContent }) {
         <img className="avatar" src={avatar} alt="user-avatar" />
         <div className="user-infos">
           <h1>Thomas</h1>
-          <h3>Testeur / développeur web</h3>
+          <h3>Développeur web - Testeur</h3>
           <div className="header-contacts">
             <FaLinkedin
               className="contact-item"
