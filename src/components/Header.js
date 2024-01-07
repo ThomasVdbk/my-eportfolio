@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import avatar from "../assets/avatar.jpg";
+import photo from "../assets/photo.jpg";
 import "../styles/headerStyle.css";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
@@ -36,7 +36,7 @@ function Header({ setBodyContent }) {
   return (
     <header>
       <div className="header-left">
-        <img className="avatar" src={avatar} alt="user-avatar" />
+        <img className="avatar" src={photo} alt="user-avatar" />
         <div className="user-infos">
           <h1>Thomas</h1>
           <h3>Développeur web - Testeur</h3>
