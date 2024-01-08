@@ -16,7 +16,7 @@
 }
 
 .article-card h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     opacity: 0.75;
     text-align: center;
@@ -56,9 +56,22 @@
     height: 150px;
     width: auto;
     border-radius: 15%;
+}
 
+.article-card.expanded h3 {
+    font-size: 2rem;
+}
+
+.article-card.expanded .date {
+    font-size: 1.1rem;
+    color: rgb(143, 141, 141);
 }
 
 .article-card.expanded p {
-    padding: 2rem;
+    font-size: 1.2rem;
+    margin: 15px;
+    /* padding: 2rem; */
+    word-wrap: break-word;
+    display: flex;
+    align-content: flex-start;
 }
