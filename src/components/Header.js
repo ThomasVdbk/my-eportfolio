@@ -7,6 +7,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa6";
+import { GoProjectRoadmap } from "react-icons/go";
 
 function Header({ setBodyContent }) {
   const [currentSection, setCurrentSection] = useState("Accueil");
@@ -64,28 +65,32 @@ function Header({ setBodyContent }) {
       </div>
       <div className="header-right">
         <button
+          title="Accueil"
           className="header-right-btn"
           onClick={() => handleButtonClick("Accueil")}
         >
           <GrHomeRounded />
-          <br />
-          Accueil
         </button>
         <button
+          title="Parcours professionnel"
           className="header-right-btn"
           onClick={() => handleButtonClick("Expérience")}
         >
           <MdWorkOutline />
-          <br />
-          Expérience
         </button>
         <button
+          title="Formations & Compétences"
           className="header-right-btn"
-          onClick={() => handleButtonClick("Travail")}
+          onClick={() => handleButtonClick("Formation")}
         >
           <BsPersonWorkspace />
-          <br />
-          Travail
+        </button>
+        <button
+          title="Mes projets"
+          className="header-right-btn"
+          onClick={() => handleButtonClick("Projet")}
+        >
+          <GoProjectRoadmap />
         </button>
       </div>
       <div className="header-pdf">

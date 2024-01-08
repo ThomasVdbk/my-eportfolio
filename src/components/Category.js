@@ -24,7 +24,9 @@ function Categories({ currentSection }) {
         ? ""
         : currentSection === "Expérience"
         ? "Ici, on parle de mes expériences professionnelles"
-        : currentSection === "Travail"
+        : currentSection === "Formation"
+        ? "Vous êtes dans la section Formations & Compétences"
+        : currentSection === "Projet"
         ? "Quelques exemples de mes travaux"
         : ""
     );
