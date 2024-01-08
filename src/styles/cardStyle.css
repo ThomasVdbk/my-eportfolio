@@ -15,8 +15,10 @@
 }
 
 .single-article {
+    
     height: auto;
     width: auto;
+    padding-bottom: 20px;
 }
 
 .article-card h3 {
