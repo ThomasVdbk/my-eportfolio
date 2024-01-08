@@ -1,10 +1,10 @@
-import imageTest from "../assets/lighthouse-8415024_1280.jpg";
+import test from "../assets/test.jpg";
 
 const articlesData = [
   {
     id: 1,
     title: ``,
-    img: imageTest,
+    img: ``,
     content: ``,
     category: "Accueil",
   },
@@ -22,55 +22,50 @@ const articlesData = [
   },
   {
     id: 4,
-    title: ``,
-    img: `<a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>`,
-    content: `Tests en boîte noire (fonctionnels et non-fonctionnels).
-      Participation à la digitalisation des processus opérationnels et réunions de projets.
-      Initiation WordPress / reporting Excel`,
+    title: `Testeur logiciel`,
+    img: test,
+    date: `Juin à Juillet 2023`,
+    content: `Durant ma formation de Testeur de logiciels avec l'AFPA, j'ai eu l'occasion de participer a un stage en entreprise et c'est l'entreprise WAAT (solution de recharge sécurisée) qui m'a donné l'opportunité de participer activement sur les thèmes suivants :
+    - Tests en boîte noire (fonctionnels et non-fonctionnels).
+    - Participation à la digitalisation des processus opérationnels et réunions de projets.
+    - Initiation WordPress / reporting Excel`,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 5,
     title: ``,
     content: ``,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 6,
     title: ``,
     content: ``,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 7,
     title: ``,
     content: ``,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 8,
     title: ``,
     content: ``,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 9,
     title: ``,
     content: ``,
     category: "Expérience",
-    expanded: false,
   },
   {
     id: 6,
     title: ``,
     content: ``,
     category: "Travail",
-    expanded: false,
   },
 ];
 

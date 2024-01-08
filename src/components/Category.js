@@ -54,6 +54,7 @@ function Categories({ currentSection }) {
             key={article.id}
             img={article.img}
             title={article.title}
+            date={article.date}
             content={article.content}
             isSingle={categoryArticles.length === 1}
             expanded={article.expanded}
