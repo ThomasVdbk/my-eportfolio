@@ -21,11 +21,13 @@ function Categories({ currentSection }) {
 
     setCategoryTitle(
       currentSection === "Accueil"
-        ? "Articles d'accueil"
+        ? ""
         : currentSection === "Expérience"
-        ? "Articles d'expérience"
-        : currentSection === "Travail"
-        ? "Articles de travail"
+        ? "Ici, on parle de mes expériences professionnelles"
+        : currentSection === "Formation"
+        ? "Vous êtes dans la section Formations & Compétences"
+        : currentSection === "Projet"
+        ? "Quelques exemples de mes travaux"
         : ""
     );
   }, [currentSection]);

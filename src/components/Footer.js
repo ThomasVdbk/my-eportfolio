@@ -59,14 +59,21 @@ function Footer({ setBodyContent }) {
               pointer
               onClick={() => handleButtonClick("Expérience")}
             >
-              Expérience
+              Parcours professionnel
             </li>
             <li
               className="footer-li"
               pointer
-              onClick={() => handleButtonClick("Travail")}
+              onClick={() => handleButtonClick("Formation")}
             >
-              Travail
+              Formations & Compétences
+            </li>
+            <li
+              className="footer-li"
+              pointer
+              onClick={() => handleButtonClick("Projet")}
+            >
+              Mes projets
             </li>
             <li className="footer-li">
               <a href={pdfFileUrl} download={pdfFileName}>
