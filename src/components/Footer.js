@@ -44,44 +44,35 @@ function Footer({ setBodyContent }) {
         </p>
       </div>
       <div className="footer-middle">
-        <p>
-          Liens rapides :
-          <ul className="navigation-list">
-            <li
-              className="footer-li"
-              pointer
-              onClick={() => handleButtonClick("Accueil")}
-            >
-              Accueil
-            </li>
-            <li
-              className="footer-li"
-              pointer
-              onClick={() => handleButtonClick("Expérience")}
-            >
-              Parcours professionnel
-            </li>
-            <li
-              className="footer-li"
-              pointer
-              onClick={() => handleButtonClick("Formation")}
-            >
-              Formations & Compétences
-            </li>
-            <li
-              className="footer-li"
-              pointer
-              onClick={() => handleButtonClick("Projet")}
-            >
-              Mes projets
-            </li>
-            <li className="footer-li">
-              <a href={pdfFileUrl} download={pdfFileName}>
-                Télécharger mon CV
-              </a>
-            </li>
-          </ul>
-        </p>
+        <p>Liens rapides :</p>
+        <ul className="navigation-list">
+          <li
+            className="footer-li"
+            onClick={() => handleButtonClick("Accueil")}
+          >
+            Accueil
+          </li>
+          <li
+            className="footer-li"
+            onClick={() => handleButtonClick("Expérience")}
+          >
+            Parcours professionnel
+          </li>
+          <li
+            className="footer-li"
+            onClick={() => handleButtonClick("Formation")}
+          >
+            Formations & Compétences
+          </li>
+          <li className="footer-li" onClick={() => handleButtonClick("Projet")}>
+            Mes projets
+          </li>
+          <li className="footer-li">
+            <a href={pdfFileUrl} download={pdfFileName}>
+              Télécharger mon CV
+            </a>
+          </li>
+        </ul>
       </div>
       <div className="footer-right">
         <div className="heberge">

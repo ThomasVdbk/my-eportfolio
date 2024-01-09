@@ -4,9 +4,9 @@ import "../styles/bodyStyle.css";
 
 function Body({ currentSection }) {
   return (
-    <body className="body-container">
+    <div className="body-container">
       <Category currentSection={currentSection} />
-    </body>
+    </div>
   );
 }
 

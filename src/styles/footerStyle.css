@@ -6,7 +6,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 
 
 }
@@ -39,4 +39,14 @@ ul {
 
 .footer-right {
   padding-top: 20px;
+}
+
+.footer-middle{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.footer-middle p{
+  margin-bottom:0;
+  padding-left: 25px;
 }
