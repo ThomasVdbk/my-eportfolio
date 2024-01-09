@@ -21,7 +21,7 @@ const articlesData = [
     content: `Bonjour et bienvenue sur mon portfolio professionnel en ligne ! 
     Je suis Thomas, développeur web junior et testeur, passionné par l’univers du Web et des nouvelles technologies. 
     En explorant ces composants, je partage mon parcours, mes formations, mes compétences et réalisations dans le domaine du développement.
-    Mon objectif est de créer des expériences numériques en mettant l'accent sur mon savoir faire et ma maîtrise des langages de programmation. Que ce soit à travers le développement de logiciels, la conception d'interfaces utilisateur ou la gestion de projets, je m'efforce toujours d'atteindre l'excellence.
+    Mon objectif est de créer une expérience numérique en mettant l'accent sur mon savoir faire et ma maîtrise des langages de programmation. Que ce soit à travers le développement de logiciels, la conception d'interfaces utilisateur ou la gestion de projets, je m'efforce toujours d'atteindre l'excellence.
     Naviguez à travers les différentes sections de mon portfolio pour en savoir plus sur mon parcours professionnel, mes projets passés et mes compétences techniques. Si vous avez des questions ou si vous souhaitez discuter d'une collaboration potentielle, n'hésitez pas à me contacter.
     Merci de prendre le temps de découvrir mon travail. J'espère que vous trouverez ici un aperçu inspirant de ce que je peux apporter à votre équipe ou à votre projet.
     Bien à vous,
@@ -219,7 +219,33 @@ const articlesData = [
     title: `React`,
     img: react,
     date: `2023`,
-    content: ``,
+    content: `Découvrir la manipulation de la bibliothèque React s'avère être une démarche enrichissante pour concrétiser mes connaissances en JavaScript. Ce parcours m'a permis d'explorer la logique du routing, les hooks, et toutes les fonctionnalités interactives qui font de React l'une des bibliothèques JavaScript les plus prisées pour la construction d'interfaces web.
+    
+    Mon apprentissage s'est déployé en plusieurs phases :
+    - Acquérir les fondamentaux via des cours sur OpenClassrooms, en mettant directement en pratique les concepts appris.
+    - Elargir ma compréhension en visionnant des vidéos de créateurs sur YouTube, en complément des documents officiels qui ont renforcé et étayé leurs explications.
+    - Mise en œuvre de mes connaissances par la création d'un projet simple, suivi de la réalisation de mon portfolio, que vous explorez actuellement (lien vers le dépôt GitHub en bas de carte).
+    
+    Compétences acquises :
+    - Établissement des bases d'une application avec Create React App.
+    - Gestion du style et du contenu pour une interface attrayante.
+    - Utilisation des hooks useState et useEffect pour une gestion efficace de l'état et des effets secondaires.
+    - Manipulation des props pour la communication entre composants.
+    `,
+    liens: [
+      {
+        titre: "lien projet OpenClassrooms",
+        url: "https://github.com/ThomasVdbk/ecommerce_react/tree/develop",
+      },
+      {
+        titre: "lien projet simple",
+        url: "https://github.com/ThomasVdbk/simple-project-react.git",
+      },
+      {
+        titre: "lien projet portfolio",
+        url: "https://github.com/ThomasVdbk/my-eportfolio/tree/develop",
+      },
+    ],
     category: "Projet",
   },
   {

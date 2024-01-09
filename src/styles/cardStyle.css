@@ -86,3 +86,9 @@
     align-content: flex-start;
     color: antiquewhite;
 }
+
+.article-card.expanded .lien {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgb(143, 141, 141);
+}
