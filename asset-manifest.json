@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/my-eportfolio/static/css/main.fab17b58.css",
-    "main.js": "/my-eportfolio/static/js/main.327f47ea.js",
-    "static/media/avatar.jpg": "/my-eportfolio/static/media/avatar.4611f5835f7ce8dbfda0.jpg",
-    "static/media/github.png": "/my-eportfolio/static/media/github.22cfdd1cba253783ce51.png",
-    "static/media/linkedin.png": "/my-eportfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "main.css": "/my-eportfolio/static/css/main.756aa5cd.css",
+    "main.js": "/my-eportfolio/static/js/main.778ccdbb.js",
+    "static/media/appro.png": "/my-eportfolio/static/media/appro.73a1eab6601c531c8bd1.png",
+    "static/media/photo.jpg": "/my-eportfolio/static/media/photo.8b95379ad6f0d8f29e17.jpg",
+    "static/media/autodidacte.jpg": "/my-eportfolio/static/media/autodidacte.f123b4543f42a8640fa5.jpg",
+    "static/media/licence.jpg": "/my-eportfolio/static/media/licence.d220c0fcab6d5520d156.jpg",
+    "static/media/logistique.jpg": "/my-eportfolio/static/media/logistique.c98a64901d35e1a8e1c5.jpg",
+    "static/media/java.png": "/my-eportfolio/static/media/java.8195dc3f72192f8bd214.png",
+    "static/media/dupas.jpg": "/my-eportfolio/static/media/dupas.68a9a38fc02344758579.jpg",
+    "static/media/ms.jpg": "/my-eportfolio/static/media/ms.cc0fb34ec8c93ba94c72.jpg",
+    "static/media/keo.jpg": "/my-eportfolio/static/media/keo.d631c0603fd7dd575b0a.jpg",
+    "static/media/securite.jpg": "/my-eportfolio/static/media/securite.567880e5b37ec6ca9eff.jpg",
+    "static/media/dut.jpg": "/my-eportfolio/static/media/dut.1cab872ce013a3651e8e.jpg",
+    "static/media/react.png": "/my-eportfolio/static/media/react.c90ddc51c2cebf2c6626.png",
+    "static/media/test.jpg": "/my-eportfolio/static/media/test.08e2d3030da181fe8e24.jpg",
+    "static/media/build.jpg": "/my-eportfolio/static/media/build.220dcecd6ac872a8b216.jpg",
+    "static/media/html.webp": "/my-eportfolio/static/media/html.4d97eb7ff48cf5a63bf1.webp",
     "index.html": "/my-eportfolio/index.html",
-    "main.fab17b58.css.map": "/my-eportfolio/static/css/main.fab17b58.css.map",
-    "main.327f47ea.js.map": "/my-eportfolio/static/js/main.327f47ea.js.map"
+    "main.756aa5cd.css.map": "/my-eportfolio/static/css/main.756aa5cd.css.map",
+    "main.778ccdbb.js.map": "/my-eportfolio/static/js/main.778ccdbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.fab17b58.css",
-    "static/js/main.327f47ea.js"
+    "static/css/main.756aa5cd.css",
+    "static/js/main.778ccdbb.js"
   ]
 }
