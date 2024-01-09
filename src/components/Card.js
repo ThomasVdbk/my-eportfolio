@@ -55,8 +55,6 @@ function Card({
           ))}
         </div>
       )}
-      {/* <pre className="p">{content}</pre> */}
-      {/* {content && <p className="p">{content}</p>} */}
     </div>
   );
 }

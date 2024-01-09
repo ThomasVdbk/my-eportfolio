@@ -224,7 +224,7 @@ const articlesData = [
     Mon apprentissage s'est déployé en plusieurs phases :
     - Acquérir les fondamentaux via des cours sur OpenClassrooms, en mettant directement en pratique les concepts appris.
     - Elargir ma compréhension en visionnant des vidéos de créateurs sur YouTube, en complément des documents officiels qui ont renforcé et étayé leurs explications.
-    - Mise en œuvre de mes connaissances par la création d'un projet simple, suivi de la réalisation de mon portfolio, que vous explorez actuellement (lien vers le dépôt GitHub en bas de carte).
+    - Mise en œuvre de mes connaissances par la création d'un projet simple, suivi de la réalisation de mon portfolio, que vous explorez actuellement (liens vers les dépôts GitHub en bas de carte).
     
     Compétences acquises :
     - Établissement des bases d'une application avec Create React App.
@@ -234,15 +234,15 @@ const articlesData = [
     `,
     liens: [
       {
-        titre: "lien projet OpenClassrooms",
+        titre: "lien projet React OpenClassrooms",
         url: "https://github.com/ThomasVdbk/ecommerce_react/tree/develop",
       },
       {
-        titre: "lien projet simple",
+        titre: "lien projet React simple",
         url: "https://github.com/ThomasVdbk/simple-project-react.git",
       },
       {
-        titre: "lien projet portfolio",
+        titre: "lien projet React portfolio",
         url: "https://github.com/ThomasVdbk/my-eportfolio/tree/develop",
       },
     ],
@@ -253,7 +253,39 @@ const articlesData = [
     title: `JavaScript`,
     img: javascript,
     date: `2023`,
-    content: ``,
+    content: `JavaScript est un incontournable dans le monde de la programmation en raison de sa prédominance et de sa polyvalence, tant du côté frontend que du côté backend avec Node.js. J'apprécie travailler avec ce langage au quotidien, même si parfois je ressens le manque du côté rigoureux de Java dans son développement. Néanmoins, JavaScript reste l'un des langages les plus populaires, offrant un accès à un vaste éventail de frameworks et de bibliothèques.
+    En ce qui concerne l'apprentissage de JavaScript, rien de plus simple : il suffit de se laisser guider et de pratiquer, pratiquer, et encore pratiquer, un peu comme pour tous les langages. Comme en témoigne la liste de mes projets utilisant ce langage ci-dessous, la manipulation est la clé, et je suis loin d'en avoir fini.
+    
+    Mes projets basés sur JavaScript :
+    - random_gift (thème phare de Noel: le tirage au sort de cadeau)
+    - my-eportfolio (le portfolio que vous consultez actuellement)
+    - ecommerce_react (développé en apprentissage avec OpenClassrooms)
+    - simple-project-react (pour l'apprentissage simpliste de react)
+    - go-fullstack-node-express-mongodb (tout est dans le titre, développé en apprentissage avec OpenClassrooms)
+    (Vous trouverez les liens vers les dépôts GitHub en bas de la carte)
+    `,
+    liens: [
+      {
+        titre: "lien projet random_gift",
+        url: "https://github.com/ThomasVdbk/random_gift/tree/develop",
+      },
+      {
+        titre: "lien projet my-eportfolio",
+        url: "https://github.com/ThomasVdbk/my-eportfolio/tree/develop",
+      },
+      {
+        titre: "lien projet ecommerce_react",
+        url: "https://github.com/ThomasVdbk/ecommerce_react/tree/develop",
+      },
+      {
+        titre: "lien projet simple-project-react",
+        url: "https://github.com/ThomasVdbk/simple-project-react.git",
+      },
+      {
+        titre: "lien projet go-fullstack-node-express-mongodb",
+        url: "https://github.com/ThomasVdbk/go-fullstack-node-express-mongodb/tree/develop",
+      },
+    ],
     category: "Projet",
   },
   {
@@ -261,15 +293,58 @@ const articlesData = [
     title: `HTML CSS`,
     img: html,
     date: `2022 à 2023`,
-    content: ``,
+    content: `La vitrine de la grande majorité des sites web est constituée de langage de balises, qu'elles soient pair ou orpheline, stylisées avec des propriétés CSS. Ce fut ma première expérience lors de ma découverte initiale, et j'ai tout de suite adhéré. Simple, intuitif, avec des résultats concrets presque immédiats, on ne peut que prendre du plaisir à les manipuler.
+    En ce qui concerne les projets, tous en sont composés, donc la manipulation pour quelqu'un comme moi, qui débute, est forcément quotidienne.
+    
+    Mes projets basés sur HTML & CSS :
+    - random_gift (thème phare de Noel: le tirage au sort de cadeau)
+    - my-eportfolio (le portfolio que vous consultez actuellement)
+    - ecommerce_react (développé en apprentissage avec OpenClassrooms)
+    - simple-project-react (pour l'apprentissage simpliste de react)
+    - go-fullstack-node-express-mongodb (tout est dans le titre, développé en apprentissage avec OpenClassrooms)
+    (Vous trouverez les liens vers les dépôts GitHub en bas de la carte)
+    `,
+    liens: [
+      {
+        titre: "lien projet random_gift",
+        url: "https://github.com/ThomasVdbk/random_gift/tree/develop",
+      },
+      {
+        titre: "lien projet my-eportfolio",
+        url: "https://github.com/ThomasVdbk/my-eportfolio/tree/develop",
+      },
+      {
+        titre: "lien projet ecommerce_react",
+        url: "https://github.com/ThomasVdbk/ecommerce_react/tree/develop",
+      },
+      {
+        titre: "lien projet simple-project-react",
+        url: "https://github.com/ThomasVdbk/simple-project-react.git",
+      },
+      {
+        titre: "lien projet go-fullstack-node-express-mongodb",
+        url: "https://github.com/ThomasVdbk/go-fullstack-node-express-mongodb/tree/develop",
+      },
+    ],
     category: "Projet",
   },
   {
-    id: 19,
+    id: 20,
     title: `Java`,
     img: java,
     date: `2022`,
-    content: ``,
+    content: `Le socle de nombreux logiciels, le langage Java offre une robustesse et une portabilité exceptionnelles. Son utilisation m'a été révélée lors de mes premiers pas dans le monde du développement, et depuis, j'ai été séduit par sa structure élégante et son approche orientée objet.
+    Java, c'est plus qu'un simple langage. C'est une plateforme complète qui permet de construire des applications variées, de la programmation côté serveur à la création d'applications mobiles Android. La syntaxe claire et la gestion efficace de la mémoire en font un choix de prédilection pour de nombreux développeurs.
+    En écrivant ces mots, je réalise que je n'avais pas à l'époque adopté l'habitude d'utiliser GitHub. Je compte bien remédier à cela à l'avenir en développant une gamme diversifiée d'applications.
+    
+    Projet Java sur Github :
+    - HerdtrackBackEnd: projet fil rouge de ma formation chez Aston, développé avec trois camarades, il avait pour vocation de gérer l'exploitation bovine, en prenant en compte le troupeau, les parcs, et évoluant avec une gestion du carnet de santé par animal. `,
+    liens: [
+      {
+        titre: "lien projet HerdtrackBackEnd",
+        url: "https://github.com/ThomasVdbk/HerdtrackBackEnd/tree/master",
+      },
+    ],
     category: "Projet",
   },
 ];
