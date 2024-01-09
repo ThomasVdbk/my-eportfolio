@@ -1,0 +1,94 @@
+.article-card {
+    height: 200px;
+    width: 350px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #333;
+    margin: 1rem;
+    position: relative;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+.article-card:not(.single-article) {
+    cursor: pointer;
+}
+
+.single-article {
+    
+    height: auto;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.article-card h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.75;
+    text-align: center;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.article-card:is(.single-article) p {
+    padding: 1rem;
+    margin: 0;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.article-card img {
+    max-height: 300px;
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/**** Propriete lorsque article-card est expanded ****/
+
+.article-card.expanded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    left: 0;
+}
+
+.article-card.expanded img {
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #4a4949;
+    height: 150px;
+    width: auto;
+    border-radius: 15%;
+}
+
+.article-card.expanded h3 {
+    font-size: 2rem;
+}
+
+.article-card.expanded .date {
+    font-size: 1.1rem;
+    color: rgb(143, 141, 141);
+}
+
+.article-card.expanded p {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* margin: 15px; */
+    line-height: 1.6;
+    word-wrap: break-word;
+    display: flex;
+    align-content: flex-start;
+    color: antiquewhite;
+}
+
+.article-card.expanded .lien {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgb(143, 141, 141);
+}
