@@ -58,6 +58,7 @@ function Categories({ currentSection }) {
             title={article.title}
             date={article.date}
             content={article.content}
+            lien={article.liens}
             isSingle={categoryArticles.length === 1}
             expanded={article.expanded}
             onClick={(cardRef) => handleCardClick(article.id, cardRef)}

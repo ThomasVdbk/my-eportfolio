@@ -15,8 +15,10 @@
 }
 
 .single-article {
+    
     height: auto;
     width: auto;
+    padding-bottom: 20px;
 }
 
 .article-card h3 {
@@ -83,4 +85,10 @@
     display: flex;
     align-content: flex-start;
     color: antiquewhite;
+}
+
+.article-card.expanded .lien {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgb(143, 141, 141);
 }
