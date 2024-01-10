@@ -92,6 +92,12 @@ header {
         width: 80%; 
         text-align: center; 
         margin-bottom: 10px; 
+        padding-left: 0;
+    }
+    .header-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     .header-right-btn{
         width: 20%;
