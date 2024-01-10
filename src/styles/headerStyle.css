@@ -96,5 +96,8 @@ header {
     .header-right-btn{
         width: 20%;
     }
+    .header-pdf {
+        padding-right: 0;
+    }
 }
 

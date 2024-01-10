@@ -68,4 +68,7 @@ ul {
       text-align: center; 
       margin-bottom: 10px; 
   }
+  .navigation-list{
+    text-align:left;
+  }
 }
