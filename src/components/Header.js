@@ -26,7 +26,7 @@ function Header({ setBodyContent }) {
 
   const handleLinkedInClick = () => {
     window.open(
-      "https://www.linkedin.com/in/thomas-vandemeulebroucke/",
+      "https://www.linkedin.com/in/thomas-vdbk/",
       "_blank",
       "noopener,noreferrer"
     );
