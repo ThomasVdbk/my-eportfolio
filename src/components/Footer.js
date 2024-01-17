@@ -27,7 +27,7 @@ function Footer({ setBodyContent }) {
         <p>
           Réseaux sociaux :<br />
           <a
-            href="https://www.linkedin.com/in/thomas-vandemeulebroucke/"
+            href="https://www.linkedin.com/in/thomas-vdbk/"
             target="_blank"
             rel="noopener noreferrer"
           >
